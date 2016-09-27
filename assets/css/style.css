@@ -94,16 +94,15 @@ pre {
 .navbar-default .navbar-nav > .active > a {
     color:aliceblue;
     background: #4AAAA5;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
 }
 /* Navbar Active Hover */
 .navbar-default .navbar-nav > .active > a:hover {
-    color:aliceblue;
-    background: #000;
+    color: aliceblue;
+    background: #4AAAA5;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
 } 
-
 /*the logo*/
 .navbar-brand {
     margin: 0px;
@@ -114,11 +113,32 @@ pre {
     line-height: 90px;
     background-color: #4AAAA5;
 }
-/*---------------------------------------------------  The main stuff  -----------------*/
+/* Logo Link Hover CSS*/
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: aliceblue;
+    background-color: #4AAAA5;
+}
+/*-----------------------------------------  The main stuff  -----------------*/
 .content-border {
     margin: 0 auto;
     max-width:960px;;
     margin-top: 130px;
+}
+.content {
+    margin: 0 auto;
+    padding: 0px 30px 30px 30px;
+    max-width: 650px;
+    background-color:white;
+    float: left;
+    margin-bottom: 40px;
+}
+.portfolio-box {
+    float: left;
+}
+.portfolio-box img{
+    max-width: 100%;
+    margin-bottom: 25px;
 }
 
 /*-- About Image --*/
@@ -126,16 +146,7 @@ pre {
     float: left;
     margin: 0em 2em 0em 0em;
 }
-/*---------------------------------------------------  Contact Page CSS  ---------------*/
-
-.content {
-    margin: 0 auto;
-    padding: 40px 30px 30px 30px;
-    max-width: 650px;
-    background-color:white;
-    float: left;
-    margin-bottom: 40px;
-}
+/*-----------------------------------------  Contact Page CSS  ---------------*/
 /*Contact input styles*/
 input[type=text] {
     width: 100%;
@@ -171,9 +182,15 @@ textarea {
     width: 265px;
     height: 200px;
     background-color: white;
-    float: right;
+    float: left;
     padding: 15px;
+    margin-left: 40px;
     text-align: center;
+}
+@media screen and (min-width: 480px) {
+    .connect-container {
+        visibility:hidden
+    }
 }
 /*Connect Me img padding*/
 .connect-container img { 
