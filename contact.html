@@ -3,74 +3,58 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">     
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title Me</title>
+    <link rel="stylesheet" href="assets/css/style-text.css">
+    <link rel="stylesheet" href="assets/css/style-nav.css">
+    <title>Title</title>
 </head>
-<body>   
-    <!-- Start of Hamburger Menu Nav -->  
-<div id="header"></div>
-    <!------Hamburger Menu Nav End------> 
-    <!---- ________________ ----->
-<div class="content-border col-lg-offset-1">
-    <div class="content">
-            <section>
-                <h2>Contact</h2>
-                    <hr>
-                <form>
-                    <label for="name"><h4>Name</h4></label>
-                    <input type="text" id="inputName" placeholder="John Smith">
-                    <label for="email"><h4>Email</h4></label>
-                    <input type="text" id="inputEmail" placeholder="example@gmail.com">
-                    <label for="message"><h4>Message</h4></label>
-                    <textarea type="text" id="inputMessage"placeholder=""></textarea>
-                    <input class="btn" type="submit" value="Submit">
-                </form>
-            </section>
-    </div><!-- content container -->
-    <!-----------------------> 
-    <!--- Start Connect with Me --->
-    <div class="connect-container">
-        <h3>Connect with Me</h3>
+<body> 
+    
+<nav><!-- Start of Nav -->  
+    <div class="logo">
+        <a href="about.html"><h1>Your Name</h1></a>
+    </div><!-- End Logo -->
+    <div class="nav-links">
+        <a href="about.html">About</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a class="active" href="contact.html">Contact</a>
+    </div><!-- End Nav Links -->
+</nav><!-- End Nav -->
+
+<section class="content-wrapper"><!-- Start Content -->
+    <div class="contact">
+        <h2>Contact</h2>
         <hr>
-        <img src="assets/images/git.png">
-        <img src="assets/images/linkedin.png">
-        <img src="assets/images/stackoverflow.png">
-    </div>
-    <!--- End Connect with Me --->
-</div><!-- #content -->
- 
-<!-- Hello Footer -->
-    <div id="footer"></div>
-<!-- Goodbyefooter -->
-    
-    
-    
-<!---- ________________ ----->
-<div class="container">
-    <div class="row">
-        <section class="col-sm-12">
+        <form>
+            <label for="name"><h4>Name</h4></label>
+            <input type="text" id="inputName" placeholder="John Smith">
+            <label for="email"><h4>Email</h4></label>
+            <input type="text" id="inputEmail" placeholder="example@gmail.com">
+            <label for="message"><h4>Message</h4></label>
+            <textarea type="text" id="inputMessage"placeholder=""></textarea>
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div><!-- content container -->
 
+    <aside><!--- Start Connect with Me --->
+        <div class="connect-container">
+            <h3>Connect with Me</h3>
+            <hr>
+        </div>
+        <div class="connect-images">
+            <img src="assets/images/git.png">
+            <img src="assets/images/linkedin.png">
+            <img src="assets/images/stackoverflow.png">
+        </div>
+    </aside><!--- End Connect with Me --->
+</section><!--- End Section content-wrapper --->
 
-        </section>
-    </div><!-- row -->
-</div><!-- content container -->
-<!----------------------->         
-    
-    
-    
-    
-<!-------- The End ----------->    
-    <script src="assets/js/jquery-2.1.4.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-    <script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
+<footer>
+    <div class="footer">
+        <p class="copyright">&copy; Copyright 2016 Your Name</p>
+    </div><!-- End footer class -->
+</footer> <!-- End Footer Section-->  
 </body>
 </html>
