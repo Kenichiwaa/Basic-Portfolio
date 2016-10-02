@@ -6,14 +6,23 @@ nav {
     font-style: normal;
     height: 90px;
     max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.nav-content {
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
 /*the logo*/
 nav .logo {
     background-color: #4AAAA5;
     display: inline-block;
     float: left;
-    margin-left: 40px;
+    margin-left: 0px;
     max-height: 90px; 
     max-width: 250px;
     padding: 0 15px; 
@@ -24,7 +33,7 @@ nav .logo {
 nav .nav-links {
     display: inline-block;
     float: right;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 /* Nav Links */
